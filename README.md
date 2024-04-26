@@ -86,6 +86,12 @@ About to write to C:\Users\lenar\Desktop\claseComplementaria\package.json:
 
 Is this OK? (yes) seleccionamos Y para continua y nos crea un paquete.json que trae la informacion aterior
 3. otra forma de hacerlo mas rapido es ingresando npm init --yes  o -y da igual cualquier forma y nos crea el mismo paquete.json donde se puede ingresar y modificar los datos 
+4. ahora se instalan las dependencias para que nuestro proyecto funcione se descargan dependencia por dependiendo la necesidad
+ a. npm i express
+ b. npm i nodemon
+
+ al instalarse los otros 95 paquetes es lo que llamamos dependencias por que son paquetes necesarios para que express o nodemon funcionen bien 
+
 
 
 
