@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--para que se genere de manera asincrona ponemos un defer antes del scr en el script-->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--iconos de bostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>E-comerce practica BIT</title>
+    
+</head>
+<body class="overflow-x-hidden miBody">
+    <!--Tips para el uso de bootstrap-->
+    <!--1. Aprender a moverse en la documentacion-->
+    <!--2.familiarizarse con las clases-->
+    <!--3.Utilizar las clases segun nuestras necesidades-->
+    <!-- se puede llamar una clase de bootstrap y cambiarle algo en sus estilos puede que funcione como puede que no-->
+    <!--4. si creamos una clase que sea propia o en espanol para no danar nada que tenga en ingles de bootstrap-->
+    <!--breakpoints tiene varias clases donde se muestran cosas como tamano con sus dimensiones-->
+    <!--como poner separacion se encuentra flex en bootstrap-->
+    <!--si queremos cambiar un tamano del carrusel -->
+    <!--menu de navegacion-->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">E-comerce</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <!--dentro del contenedor puse una segunda clase con el espacio y esta clase la encontre en la seccion flex de la pagina de bootstrap-->
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="bi bi-cart4"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--fin menu de navegacion-->
+      <!--carrusel de imagenes-->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner miCarrusel p-4">
+          <div class="carousel-item active">
+            <img src="./assets/banner/banner1.jpg" class="d-block w-100" alt="Baner1">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/banner/banner2.jpg" class="d-block w-100" alt="Baner2">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/banner/banner3.jpg" class="d-block w-100" alt="Baner3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--fin carrusel de imagenes-->
+      <!--Logos-->
+      <div class="container-fluid bg-secondary-subtle">
+        <!--p significa padding Y significa eje Y-->
+        <div class="row text-center py-4">
+          <!--col sm de small decimo que ocupa 6 espacios ysiempre se inicia desde la mas pequena a la mas grande-->
+          <div class="col-sm-6 col-lg-3"><img class="logo" src="./assets/logos/logo1.png" alt="logo"></div>
+          <div class="col-sm-6 col-lg-3"><img class="logo" src="./assets/logos/logo2.png" alt="logo"></div>
+          <div class="col-sm-6 col-lg-3"><img class="logo" src="./assets/logos/logo3.png" alt="logo"></div>
+          <div class="col-sm-6 col-lg-3"><img class="logo" src="./assets/logos/logo4.png" alt="logo"></div>
+        </div>
+      </div>
+      <!--fin logos-->
+      <!--Productos con breakpoints-->
+      <div class="container my-5">
+        <div class="row">
+          <div class="col contenedorProducto">
+            <div class="card miTarjeta border-danger-subtle text-center" style="width: 18rem;">
+              <h5 class="card-title text-capitalize">Card title</h5>
+              <img src="./assets/images/img1.png" class="card-img-top" alt="imagen">
+              <div class="card-body">
+                <p class="card-text fs-1">$20.000</p>
+                <a href="#" class="btn bg-primary-subtle">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col contenedorProducto">
+            <div class="card miTarjeta border-danger-subtle text-center" style="width: 18rem;">
+              <h5 class="card-title text-capitalize">Card title</h5>
+              <img src="./assets/images/img2.png" class="card-img-top" alt="imagen">
+              <div class="card-body">
+                <p class="card-text fs-1">$20.000</p>
+                <a href="#" class="btn bg-primary-subtle">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col contenedorProducto">
+            <div class="card miTarjeta border-danger-subtle text-center" style="width: 18rem;">
+              <h5 class="card-title text-capitalize">Card title</h5>
+              <img src="./assets/images/img3.png" class="card-img-top" alt="imagen">
+              <div class="card-body">
+                <p class="card-text fs-1">$20.000</p>
+                <a href="#" class="btn bg-primary-subtle">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col contenedorProducto">
+            <div class="card miTarjeta border-danger-subtle text-center" style="width: 18rem;">
+              <h5 class="card-title text-capitalize">Card title</h5>
+              <img src="./assets/images/img4.png" class="card-img-top" alt="imagen">
+              <div class="card-body">
+                <p class="card-text fs-1">$20.000</p>
+                <a href="#" class="btn bg-primary-subtle">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--fin Productos con breakpoints-->
+</body>
+</html>
