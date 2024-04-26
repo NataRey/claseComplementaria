@@ -90,7 +90,34 @@ Is this OK? (yes) seleccionamos Y para continua y nos crea un paquete.json que t
  a. npm i express
  b. npm i nodemon
 
- al instalarse los otros 95 paquetes es lo que llamamos dependencias por que son paquetes necesarios para que express o nodemon funcionen bien 
+ al instalarse los otros 95 paquetes es lo que llamamos dependencias por que son paquetes necesarios para que express o nodemon funcionen bien
+
+ 5. se crea el type de nuestro proyecto dntro del package.json se selecciona la opcion module ya que hace referencia al ES6 que es ecma script version 6 aqui para importar o exportar se hace directamente
+
+ ## ecma es un estandar actual para el uso de JavaScript
+ # estudiar leer este estandar 
+
+ ## si se hubiera usado common me pedia un require para importar o module export para exportar
+
+ 6. En el main se estructura en general un archivo index.js
+ entonces por fuera de todo creamos un archivo index.js en el cual vamos a estruturar todo nuestro entorno e trabajo
+ y ponemos el clasico console.log('hola mundo');
+
+ 7. en consola escribimos node index.js
+ par que nos traiga la respuesta por consola 
+
+ 8. para que no tengamos que hacer esto de ejecuar el npm run nodemon index.js en el package.json en el script agregamos esta linea 
+ # "dev": "nodemon index.js",
+ asi cuando vayamos a ejcutar solo decimos npm run dev
+
+ 9. este comando se usa mas que todo para el despliegue 
+ # "start": "node index.js",
+ que tambien va dentro del script en el archivo package.json
+
+ 10. diferencias entre star y dev
+ ![diferencias](image.png)
+
+
 
 
 
